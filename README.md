@@ -1,7 +1,17 @@
-better_than_netflix_movie_recommender
+Better Than Netflix Movie Recommender
 ==============================
 
-: Use state-of-the-art models to recommend movies.
+# Synopsis
+
+Movie recommendation is core to Netflix, where their goal is to keep users
+engaged and on their service for longer. More than 10 years after The Netflix
+Prize competition, we explore advances in recommendation systems comparing
+their performance to the winning algorithm from 2009. Utilizing graphs, we
+implement from scratch a state-of-the-art recommender, Light Graph Convolution
+Network (LightGCN) that vastly outperforms many traditional as well as newer
+recommenders.
+
+# Outcome
 
 Project Organization
 ------------
@@ -9,11 +19,7 @@ Project Organization
     ├── LICENSE
     ├── Makefile           <- Makefile with commands like `make data` or `make train`
     ├── README.md          <- The top-level README for developers using this project.
-    ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
+    ├── data               <- Data used for modeling
     │
     ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
     │
@@ -22,8 +28,6 @@ Project Organization
     ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
     │                         the creator's initials, and a short `-` delimited description, e.g.
     │                         `1.0-jqp-initial-data-exploration`.
-    │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
     │
     ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
     │   └── figures        <- Generated graphics and figures to be used in reporting

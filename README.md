@@ -6,10 +6,10 @@ Better Than Netflix Movie Recommender
 Movie recommendation is core to Netflix, where their goal is to keep users
 engaged and on their service for longer. More than 10 years after The Netflix
 Prize competition, we explore advances in recommendation systems comparing
-their performance to the winning algorithm from 2009. Utilizing graphs, we
-implement from scratch a state-of-the-art recommender, Light Graph Convolution
-Network (LightGCN) that vastly outperforms many traditional as well as newer
-recommenders.
+their performance to the winning algorithm from 2009. Taking advantage of
+graphs, we implement from scratch a state-of-the-art recommender, Light Graph
+Convolution Network (LightGCN) that vastly outperforms many traditional as well
+as newer recommenders.
 
 # Outcome
 

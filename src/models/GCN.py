@@ -183,3 +183,10 @@ class LightGCN(tf.keras.Model):
         )
 
         return topk_scores
+
+class NGCF(LightGCN):
+    def __init__(self, adj_mat, n_users, n_items, n_layers=3, emb_dim=64):
+        super(NGCF, self).__init__(adj_mat, n_users, n_items, n_layers=3, emb_dim=64)
+
+        # Stack graph convolutional layers.
+        self.gcn = [GraphConv(adj_mat, weight=True) for layer in range(n_layers)]

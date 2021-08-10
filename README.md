@@ -12,6 +12,13 @@ Convolution Network (LightGCN) that vastly outperforms many traditional as well
 as newer recommenders.
 
 # Outcome
+LightGCN vastly outperforms all other models. When compared to SVD++, LightGCN
+achieves an increase in Percision@k by 29%, Recall@k by 18%, MAP by 12%, and
+NDCG by 35%, demonstrating how far recommendation systems have advanced
+since 2009.
+
+![model_comparison](reports/figures/model_comparison.png "model_comparison")
+(ranking metrics: the higher the better)
 
 Project Organization
 ------------
@@ -21,13 +28,10 @@ Project Organization
     ├── README.md          <- The top-level README for developers using this project.
     ├── data               <- Data used for modeling
     │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
-    │
     ├── models             <- Trained and serialized models, model predictions, or model summaries
     │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
+    ├── notebooks          <- Jupyter notebooks ordered by number. Contains the EDA,
+    │                         implementation of the models, and comparsion of all the models
     │
     ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
     │   └── figures        <- Generated graphics and figures to be used in reporting

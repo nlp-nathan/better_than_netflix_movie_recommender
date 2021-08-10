@@ -321,22 +321,8 @@ class StandardVAE:
         )
 
         if self.annealing == True:
-            # initialise AnnealingCallback for annealing process
-            anneal = AnnealingCallback(
-                self.beta, self.anneal_cap, self.total_anneal_steps
-            )
-
-            # fit model
-            self.model.fit_generator(
-                generator=self.nn_batch_generator(x_train),
-                steps_per_epoch=self.number_of_batches,
-                epochs=self.n_epochs,
-                verbose=self.verbose,
-                callbacks=[metrics, history, self.reduce_lr, anneal],
-                validation_data=(x_valid, x_valid),
-            )
-
-            self.ls_beta = anneal.get_data()
+            print('annealing is not supported. Please set to False')
+            return
 
         else:
             self.model.fit_generator(

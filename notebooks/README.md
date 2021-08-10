@@ -20,19 +20,19 @@ can be developed in the span of just 1-2 years.
 
 | Algorithm | Precision@k | Recall@k | MAP | NDCG |
 | --- | --- | --- | --- | --- |
-| [LightGCN](LightGCN.ipynb)| 0.4032 | 0.2143 | 0.1392 | 0.4603 |
-| [NGCF](NGCF.ipynb) | 0.3573 | 0.1944 | 0.1179 | 0.4059 |
-| [SVAE](SVAE.ipynb) | 0.3560 | 0.0929 | 0.0485 | 0.3548 |
-| [SVD++](SVD.ipynb) | 0.1082 | 0.0386| 0.0157 | 0.1140 |
-| [SVD](SVD.ipynb) | 0.0935 | 0.0330 | 0.0117 | 0.0927 |
+| [LightGCN](1_LightGCN.ipynb)| 0.4032 | 0.2143 | 0.1392 | 0.4603 |
+| [NGCF](2_NGCF.ipynb) | 0.3573 | 0.1944 | 0.1179 | 0.4059 |
+| [SVAE](3_SVAE.ipynb) | 0.3560 | 0.0929 | 0.0485 | 0.3548 |
+| [SVD++](4_SVD.ipynb) | 0.1082 | 0.0386| 0.0157 | 0.1140 |
+| [SVD](4_SVD.ipynb) | 0.0935 | 0.0330 | 0.0117 | 0.0927 |
 
 # Notebook Organization
 
 | Directory | Description |
 | --- | --- |
-| [EDA]()| A looking through the MovieLens 100k dataset|
-| [LightGCN](LightGCN.ipynb) | Implementation of LightGCN from scratch in tensorflow|
-| [NGCF](NGCF.ipynb) | Implementation of NGCF from scratch in tensorflow |
-| [SVAE](SVAE.ipynb) | Microsoft's implementation of SVAE |
-| [SVD](SVD.ipynb) | Surprise implementation of SVD and SVD++|
-| [comparision](comparison.ipynb) | Comparison of all the recommender systems above using ranking metrics (MAP, NDCG, etc...) |
+| [EDA](0_EDA.ipynb)| A looking through the MovieLens 100k dataset|
+| [LightGCN](1_LightGCN.ipynb) | Implementation of LightGCN from scratch in tensorflow|
+| [NGCF](2_NGCF.ipynb) | Implementation of NGCF from scratch in tensorflow |
+| [SVAE](3_SVAE.ipynb) | Microsoft's implementation of SVAE |
+| [SVD](4_SVD.ipynb) | Surprise implementation of SVD and SVD++|
+| [comparision](5_comparison.ipynb) | Comparison of all the recommender systems above using ranking metrics (MAP, NDCG, etc...) |

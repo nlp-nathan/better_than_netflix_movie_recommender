@@ -30,7 +30,7 @@ can be developed in the span of just 1-2 years.
 
 | Directory | Description |
 | --- | --- |
-| [EDA](0_EDA.ipynb)| A looking through the MovieLens 100k dataset|
+| [EDA](0_EDA.ipynb)| A look through the MovieLens 100k dataset|
 | [LightGCN](1_LightGCN.ipynb) | Implementation of LightGCN from scratch in tensorflow|
 | [NGCF](2_NGCF.ipynb) | Implementation of NGCF from scratch in tensorflow |
 | [SVAE](3_SVAE.ipynb) | Microsoft's implementation of SVAE |

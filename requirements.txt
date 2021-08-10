@@ -9,7 +9,7 @@ awscli
 flake8
 python-dotenv>=0.5.1
 
-# google colab requirments
+# google colab requirements
 absl-py==0.12.0
 alabaster==0.7.12
 albumentations==0.1.12
@@ -57,6 +57,7 @@ coverage==3.7.1
 coveralls==0.5
 crcmod==1.7
 cufflinks==0.17.3
+cupy-cuda101==9.1.0
 cvxopt==1.2.6
 cvxpy==1.0.31
 cycler==0.10.0

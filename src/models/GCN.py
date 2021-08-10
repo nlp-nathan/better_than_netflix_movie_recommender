@@ -48,7 +48,8 @@ class LightGCN(tf.keras.Model):
         # Stack light graph convolutional layers.
         self.gcn = [GraphConv(adj_mat, weight=False) for layer in range(n_layers)]
 
-    def call(self, user_emb, item_emb):
+    def call(self, inputs):
+        user_emb, item_emb = inputs
         output_embeddings = tf.concat([user_emb, item_emb], axis=0)
         all_embeddings = [output_embeddings]
 
@@ -111,7 +112,7 @@ class LightGCN(tf.keras.Model):
                 with tf.GradientTape() as tape:
                     # Call model with user and item embeddings.
                     new_user_embeddings, new_item_embeddings = self(
-                        self.user_embedding, self.item_embedding
+                        (self.user_embedding, self.item_embedding)
                     )
 
                     # Embeddings after convolutions.
@@ -156,7 +157,7 @@ class LightGCN(tf.keras.Model):
 
     def recommend(self, users, k):
         # Calculate the scores.
-        new_user_embed, new_item_embed = self(self.user_embedding, self.item_embedding)
+        new_user_embed, new_item_embed = self((self.user_embedding, self.item_embedding))
         user_embed = tf.nn.embedding_lookup(new_user_embed, users)
         test_scores = tf.matmul(user_embed, new_item_embed, transpose_a=False, transpose_b=True)
         test_scores = np.array(test_scores)
